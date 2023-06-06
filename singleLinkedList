@@ -1,0 +1,15 @@
+//Single Linked list
+
+struct Node{
+  int data;
+  struct Node* next;
+};
+
+//Create node
+struct Node* CreateNode(struct Node *head, int data)
+{
+  struct Node* temp=malloc(struct Node);
+  temp->data = data;
+  temp->next = NULL;
+  return temp;
+}
